@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SERA OS Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📚 SERA OS</h1>
+      <p class="subtitle">AI Academic Assistant</p>
+    </div>
+    
+    <div class="status" id="status">
+      <div class="status-indicator"></div>
+      <span>Checking connection...</span>
+    </div>
+    
+    <div class="actions">
+      <button id="scrapeBtn" class="btn primary">
+        <span class="icon">📄</span>
+        Scrape Current Page
+      </button>
+      
+      <button id="syncBtn" class="btn secondary" disabled>
+        <span class="icon">🔄</span>
+        Sync to Dashboard
+      </button>
+      
+      <button id="aiAnalyzeBtn" class="btn accent">
+        <span class="icon">🤖</span>
+        AI Analysis
+      </button>
+    </div>
+    
+    <div class="info">
+      <h3>Detected:</h3>
+      <div id="pageInfo">Scanning page...</div>
+    </div>
+    
+    <div class="quick-actions">
+      <button id="quickNote" class="quick-btn">
+        <span>📝</span> Quick Note
+      </button>
+      <button id="createTask" class="quick-btn">
+        <span>✅</span> Create Task
+      </button>
+      <button id="viewDashboard" class="quick-btn">
+        <span>📊</span> Dashboard
+      </button>
+    </div>
+    
+    <div class="footer">
+      <div class="stats">
+        <span id="scrapedCount">0</span> pages scraped
+      </div>
+      <button id="settingsBtn" class="icon-btn">⚙️</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
